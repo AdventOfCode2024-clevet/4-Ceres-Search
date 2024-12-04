@@ -1,12 +1,18 @@
 cmake_minimum_required(VERSION 3.10)
-project(tmp)
+project(CeresSearch)
 
 set(CMAKE_CXX_STANDARD 17)
 
 set(SOURCES
     src/Main.cpp
+    src/ArgumentParser.cpp
+    src/FileReader.cpp
 )
 
-set(HEADERS)
+set(HEADERS
+    src/ArgumentParser.hpp
+    src/FileReader.hpp
+    src/XMASCounter.hpp
+)
 
-add_executable(tmp ${SOURCES} ${HEADERS})
+add_executable(CeresSearch ${SOURCES} ${HEADERS})
